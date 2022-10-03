@@ -15,7 +15,8 @@ var POTENTIAL_SENSITIVE_INFO = [...]string {
 	"FIREBASE_CREDENTIALS",
 	"PROJECT_ID",
 	"STORAGE_BUCKET",
-	"listen",
+	"AWS",
+	"FIREBASE",
 }
 
 func checkSanity( code string ) ( clean bool ){
