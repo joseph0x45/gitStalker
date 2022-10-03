@@ -40,6 +40,7 @@ func main() {
 		}
 		destination := fmt.Sprintf("https://%v/blob/%v/%v", reqestJson.Repo, reqestJson.Branch, reqestJson.Files[0])
 		fmt.Fprint(w, destination)
+		fmt.Println(Stalk(destination))
 	})
 
 	http.ListenAndServe(":3000", nil)
